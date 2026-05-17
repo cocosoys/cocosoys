@@ -1,33 +1,45 @@
-# cocosoys personal overview
+<div align="center">
 
-这是一个静态联系方式 overview，用于展示微信和 QQ 二维码。
+# cocosoys
 
-## 文件结构
+**个人联系方式 Overview**
 
-- `index.html`：页面结构与内容
-- `styles.css`：视觉样式、响应式布局、二维码折叠动画
-- `script.js`：二维码展开/收起、Esc 关闭交互
-- `wx.png`：微信二维码
-- `qq.png`：QQ 二维码
+这里用于在 GitHub 个人主页“概括”区域展示联系方式。  
+点击下方卡片即可展开二维码。
 
-## 使用方式
+</div>
 
-直接用浏览器打开 `index.html` 即可。
+---
 
-也可以在当前目录启动静态服务：
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>微信</h3>
+      <p>适合快速沟通、合作确认与后续协作。</p>
+      <details>
+        <summary><b>展开微信二维码</b></summary>
+        <br />
+        <p align="center">
+          <img src="wx.png" alt="微信二维码" width="260" />
+        </p>
+      </details>
+    </td>
+    <td width="50%" valign="top">
+      <h3>QQ</h3>
+      <p>适合资料交流、文件传递与长期联系。</p>
+      <details>
+        <summary><b>展开 QQ 二维码</b></summary>
+        <br />
+        <p align="center">
+          <img src="qq.png" alt="QQ 二维码" width="260" />
+        </p>
+      </details>
+    </td>
+  </tr>
+</table>
 
-```bash
-python -m http.server 8080
-```
+---
 
-然后访问：
-
-```text
-http://localhost:8080/
-```
-
-## 交互说明
-
-- 点击“微信”或“QQ”标题可折叠/展开对应二维码。
-- 同一时间只展开一个二维码。
-- 按 `Esc` 可收起所有二维码。
+<p align="center">
+  <sub>cocosoys · contact overview</sub>
+</p>
