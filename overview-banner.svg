@@ -1,42 +1,42 @@
 <svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">cocosoys pixel RPG profile banner</title>
-  <desc id="desc">A pixel-art RPG style GitHub profile banner for cocosoys.</desc>
+  <title id="title">cocosoys anime pixel creator banner</title>
+  <desc id="desc">A GitHub profile banner showing cocosoys as an anime and pixel-style creator with a static-first arcade interface.</desc>
   <style>
-    .pixel-title { font: 900 74px "Consolas", "Segoe UI", monospace; fill: #f7f4ff; letter-spacing: 2px; }
-    .pixel-label { font: 800 22px "Consolas", "Segoe UI", monospace; fill: #ffd66b; letter-spacing: 1px; }
-    .pixel-small { font: 700 17px "Consolas", "Segoe UI", monospace; fill: #a7fff1; letter-spacing: 1px; }
-    .pixel-tiny { font: 700 13px "Consolas", "Segoe UI", monospace; fill: #f7f4ff; letter-spacing: 1px; }
+    .title { font: 900 78px "Consolas", "Segoe UI", monospace; fill: #fff7ff; letter-spacing: 2px; }
+    .subtitle { font: 800 25px "Consolas", "Segoe UI", monospace; fill: #32ffe1; letter-spacing: 1px; }
+    .label { font: 800 18px "Consolas", "Segoe UI", monospace; fill: #ffd66b; letter-spacing: 1px; }
+    .tiny { font: 700 13px "Consolas", "Segoe UI", monospace; fill: #f7f4ff; letter-spacing: 1px; }
     .frame { stroke: #f7f4ff; stroke-width: 6; shape-rendering: crispEdges; }
-    .inner { stroke: #533b9b; stroke-width: 4; shape-rendering: crispEdges; }
-    .grid { shape-rendering: crispEdges; }
-    .blink { animation: blink 1.2s steps(2, end) infinite; }
-    .float { animation: float 3.2s ease-in-out infinite; }
-    .scan { animation: scan 4.2s linear infinite; }
-    .pulse { animation: pulse 1.8s ease-in-out infinite; }
-    @keyframes blink { 0%, 48% { opacity: 1; } 49%, 100% { opacity: .25; } }
+    .inner { stroke: #6a55d8; stroke-width: 4; shape-rendering: crispEdges; }
+    .pixel { shape-rendering: crispEdges; }
+    .blink { animation: blink 1.3s steps(2, end) infinite; }
+    .float { animation: float 3.8s ease-in-out infinite; }
+    .scan { animation: scan 5s linear infinite; }
+    @keyframes blink { 0%, 45% { opacity: 1; } 46%, 100% { opacity: .28; } }
     @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
-    @keyframes scan { 0% { transform: translateY(-120px); opacity: 0; } 20%, 70% { opacity: .42; } 100% { transform: translateY(340px); opacity: 0; } }
-    @keyframes pulse { 0%, 100% { opacity: .42; } 50% { opacity: 1; } }
+    @keyframes scan { 0% { transform: translateY(-120px); opacity: 0; } 20%, 72% { opacity: .34; } 100% { transform: translateY(340px); opacity: 0; } }
   </style>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="360" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#171329"/>
-      <stop offset="0.48" stop-color="#271a58"/>
-      <stop offset="1" stop-color="#111d35"/>
+      <stop stop-color="#090a1a"/>
+      <stop offset=".42" stop-color="#24134d"/>
+      <stop offset=".72" stop-color="#14284f"/>
+      <stop offset="1" stop-color="#071421"/>
     </linearGradient>
-    <linearGradient id="screen" x1="110" y1="78" x2="1034" y2="295" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#31206d"/>
-      <stop offset="1" stop-color="#123b5b"/>
+    <linearGradient id="panel" x1="72" y1="66" x2="1098" y2="294" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#30206d"/>
+      <stop offset=".55" stop-color="#1d245c"/>
+      <stop offset="1" stop-color="#0f3c55"/>
     </linearGradient>
-    <linearGradient id="crystal" x1="90" y1="94" x2="227" y2="234" gradientUnits="userSpaceOnUse">
+    <linearGradient id="hair" x1="116" y1="88" x2="271" y2="255" gradientUnits="userSpaceOnUse">
       <stop stop-color="#ff6bd6"/>
-      <stop offset="0.5" stop-color="#8d72ff"/>
+      <stop offset=".5" stop-color="#8d72ff"/>
       <stop offset="1" stop-color="#32ffe1"/>
     </linearGradient>
     <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#493d83" stroke-width="1" opacity=".55" class="grid"/>
+      <path d="M24 0H0V24" stroke="#4f3f91" stroke-width="1" opacity=".55" class="pixel"/>
     </pattern>
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="5" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
@@ -46,40 +46,48 @@
   </defs>
 
   <rect width="1200" height="360" fill="url(#bg)"/>
-  <rect width="1200" height="360" fill="url(#grid)" opacity=".55"/>
+  <rect width="1200" height="360" fill="url(#grid)" opacity=".62"/>
   <rect x="28" y="28" width="1144" height="304" fill="none" class="frame"/>
   <rect x="44" y="44" width="1112" height="272" fill="none" class="inner"/>
-  <rect x="58" y="62" width="1084" height="236" fill="url(#screen)" opacity=".94"/>
-  <rect class="scan" x="58" y="62" width="1084" height="46" fill="#9bfff2" opacity=".22"/>
+  <rect x="64" y="64" width="1072" height="232" fill="url(#panel)" opacity=".96"/>
+  <rect class="scan" x="64" y="64" width="1072" height="44" fill="#9bfff2" opacity=".22"/>
 
-  <g class="float" filter="url(#glow)">
-    <path d="M124 94H212V116H234V204H212V226H124V204H102V116H124V94Z" fill="url(#crystal)"/>
-    <path d="M146 130H190V146H206V190H190V206H146V190H130V146H146V130Z" fill="#171329"/>
-    <rect x="158" y="145" width="20" height="46" fill="#f7f4ff"/>
-    <rect x="182" y="145" width="16" height="16" fill="#f7f4ff"/>
-    <rect x="182" y="175" width="16" height="16" fill="#f7f4ff"/>
+  <g class="float" filter="url(#softGlow)">
+    <path d="M144 82H224V100H254V128H276V206H254V236H224V256H144V236H114V206H94V128H114V100H144V82Z" fill="url(#hair)" class="pixel"/>
+    <rect x="130" y="132" width="110" height="86" fill="#171329" class="pixel"/>
+    <rect x="142" y="146" width="24" height="22" fill="#fff7ff" class="pixel"/>
+    <rect x="204" y="146" width="24" height="22" fill="#fff7ff" class="pixel"/>
+    <rect x="150" y="154" width="10" height="10" fill="#32ffe1" class="pixel"/>
+    <rect x="212" y="154" width="10" height="10" fill="#ff6bd6" class="pixel"/>
+    <rect x="172" y="194" width="28" height="8" fill="#ffd66b" class="pixel"/>
+    <rect x="118" y="228" width="134" height="28" fill="#211849" stroke="#32ffe1" stroke-width="4" class="pixel"/>
+    <text x="137" y="248" class="tiny">CREATOR</text>
   </g>
-
-  <text x="270" y="128" class="pixel-label">PLAYER FILE</text>
-  <text x="270" y="206" class="pixel-title">cocosoys</text>
-  <text x="274" y="252" class="pixel-small">&gt; Pixel RPG menu / real repos / QR contact</text>
 
   <g>
-    <rect x="835" y="86" width="250" height="44" fill="#211849" stroke="#ff6bd6" stroke-width="4" shape-rendering="crispEdges"/>
-    <rect x="835" y="151" width="250" height="44" fill="#211849" stroke="#32ffe1" stroke-width="4" shape-rendering="crispEdges"/>
-    <rect x="835" y="216" width="250" height="44" fill="#211849" stroke="#ffd66b" stroke-width="4" shape-rendering="crispEdges"/>
-    <text x="872" y="115" class="pixel-tiny">SKILLS</text>
-    <text x="872" y="180" class="pixel-tiny">PROJECTS</text>
-    <text x="872" y="245" class="pixel-tiny">CONTACT</text>
-    <rect class="blink" x="849" y="101" width="12" height="12" fill="#ffd66b"/>
-    <rect class="pulse" x="849" y="166" width="12" height="12" fill="#32ffe1"/>
-    <rect class="blink" x="849" y="231" width="12" height="12" fill="#ff6bd6"/>
+    <text x="318" y="120" class="label">PLAYER FILE // GITHUB OVERVIEW</text>
+    <text x="318" y="204" class="title">cocosoys</text>
+    <text x="322" y="252" class="subtitle">ANIME / PIXEL-STYLE CREATOR</text>
   </g>
 
-  <g opacity=".9">
-    <rect class="blink" x="92" y="264" width="10" height="10" fill="#ffd66b"/>
-    <rect class="pulse" x="1110" y="73" width="10" height="10" fill="#32ffe1"/>
-    <rect class="blink" x="755" y="82" width="8" height="8" fill="#ff6bd6"/>
-    <rect class="pulse" x="1010" y="285" width="8" height="8" fill="#ffd66b"/>
+  <g>
+    <rect x="835" y="82" width="252" height="44" fill="#211849" stroke="#ff6bd6" stroke-width="4" class="pixel"/>
+    <rect x="835" y="148" width="252" height="44" fill="#211849" stroke="#32ffe1" stroke-width="4" class="pixel"/>
+    <rect x="835" y="214" width="252" height="44" fill="#211849" stroke="#ffd66b" stroke-width="4" class="pixel"/>
+    <rect class="blink pixel" x="852" y="98" width="12" height="12" fill="#ffd66b"/>
+    <rect x="852" y="164" width="12" height="12" fill="#32ffe1" class="pixel"/>
+    <rect class="blink pixel" x="852" y="230" width="12" height="12" fill="#ff6bd6"/>
+    <text x="878" y="111" class="tiny">MODS / PLUGINS</text>
+    <text x="878" y="177" class="tiny">PROFILE CRAFT</text>
+    <text x="878" y="243" class="tiny">QR CONTACT</text>
+  </g>
+
+  <g opacity=".92">
+    <rect x="97" y="280" width="10" height="10" fill="#ffd66b" class="blink pixel"/>
+    <rect x="1110" y="72" width="10" height="10" fill="#32ffe1" class="pixel"/>
+    <rect x="752" y="84" width="8" height="8" fill="#ff6bd6" class="blink pixel"/>
+    <rect x="1010" y="284" width="8" height="8" fill="#ffd66b" class="pixel"/>
+    <rect x="690" y="270" width="110" height="8" fill="#32ffe1" opacity=".65" class="pixel"/>
+    <rect x="690" y="284" width="74" height="8" fill="#ff6bd6" opacity=".72" class="pixel"/>
   </g>
 </svg>
